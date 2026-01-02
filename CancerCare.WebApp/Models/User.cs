@@ -1,0 +1,24 @@
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+
+namespace CancerCare.WebApp.Models
+{
+    public class User
+    {
+        [Key]
+        public int Id { get; set; }
+        [DisplayName("Full Name")]
+        [Required]
+        public string Username { get; set; }
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
+        [Required]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
+
+        public string Role { get; set; } = "Patient";
+        public string FullName { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+    }
+}
