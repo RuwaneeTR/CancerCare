@@ -1,13 +1,22 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CancerCare.WebApp.Models
 {
     public class Appointment
     {
-        [DisplayName("FullName")]
+        [Key]
+        public int Id { get; set; }
         [Required]
+        [ForeignKey("User")]
+        public int UserId { get; set; }
+        public User user { get; set; }
+        [Required]
+        [DisplayName("Full Name")]
+
         public string FullName { get; set; }
+
         [Required]
         [EmailAddress]
         public string Email { get; set; }

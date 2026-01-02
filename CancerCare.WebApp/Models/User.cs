@@ -20,5 +20,7 @@ namespace CancerCare.WebApp.Models
         public string Role { get; set; } = "Patient";
         public string FullName { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+
+        public ICollection<Appointment> Appointments { get; set; }
     }
 }
