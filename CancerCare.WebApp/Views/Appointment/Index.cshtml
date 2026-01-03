@@ -1,0 +1,150 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Appointment";
+}
+<main>
+    <section class="form-container">
+        <h2>Book an Appointment</h2>
+        <form action="/book" method="post">
+            <label for="fullname">Full Name</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="contactno">Contact Number</label><br>
+            <input type="tel" id="contactno" name="contactno" required><br><br>
+
+            <label for="doctor">Doctor Name</label><br>
+            <select id="doctor" name="doctor" required>
+                <option value="">Select Doctor...</option>
+                <option value="dr_smith">Dr. Smith – Oncologist</option>
+                <option value="dr_fernando">Dr. Fernando – Radiologist</option>
+                <option value="dr_perera">Dr. Perera – Surgeon</option>
+            </select><br><br>
+
+            <label for="appointment-date">Appointment Date</label><br>
+            <input type="date" id="appointment-date" name="appointment-date" required><br><br>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+
+    </section>
+
+    <section class="specialists">
+        <h2>Find Your Specialist</h2>
+        <p>Browse our team of oncology experts, each dedicated to a specific cancer type.</p>
+
+        <div class="doctor-card">
+            <h3>Dr. Evelyn Vance</h3>
+            <p><em>MD, Fellowship in Breast Surgical Oncology</em></p>
+            <p><strong>Specialist in Breast Cancer</strong></p>
+            <p>
+                Focus Areas: Breast-conserving surgery (lumpectomy), mastectomy and reconstructive coordination,
+                sentinel lymph node biopsy, genetic counseling for high-risk patients.
+            </p>
+        </div>
+
+        <div class="doctor-card">
+            <h3>Dr. Aris Thorne</h3>
+            <p><em>DDS, MD, Fellowship in Head and Neck Surgical Oncology</em></p>
+            <p><strong>Specialist in Oral/Lip & Head & Neck Cancer</strong></p>
+            <p>
+                Focus Areas: Oral cancer resection and reconstruction, HPV-related oropharyngeal cancer care,
+                transoral robotic surgery (TORS), dental and speech rehabilitation planning.
+            </p>
+        </div>
+
+        <div class="doctor-card">
+            <h3>Dr. Lena Sharma</h3>
+            <p><em>MD, Board Certified in Gynecologic Oncology</em></p>
+            <p><strong>Specialist in Cervical & Gynecologic Cancers</strong></p>
+            <p>
+                Focus Areas: Radical hysterectomy, fertility-sparing surgical options, robotic and minimally invasive surgery,
+                integrative supportive care during treatment.
+            </p>
+        </div>
+
+        <div class="doctor-card">
+            <h3>Dr. Marcus Reed</h3>
+            <p><em>MD, Fellowship in Endocrine Surgery</em></p>
+            <p><strong>Specialist in Thyroid & Endocrine Cancers</strong></p>
+            <p>
+                Focus Areas: Thyroidectomy and parathyroid surgery, nerve monitoring for vocal cord preservation,
+                management of advanced and recurrent thyroid cancer, ultrasound-guided biopsy.
+            </p>
+        </div>
+
+        <div class="doctor-card">
+            <h3>Dr. Samuel Chen</h3>
+            <p><em>MD, Fellowship in Colorectal Surgery</em></p>
+            <p><strong>Specialist in Colorectal Cancer</strong></p>
+            <p>
+                Focus Areas: Robotic and laparoscopic colon resection, sphincter-preserving rectal surgery,
+                management of hereditary colorectal syndromes, ostomy care and counseling.
+            </p>
+        </div>
+
+        <div class="doctor-card">
+            <h3>Dr. Fiona Hayes</h3>
+            <p><em>MD, Fellowship in Thoracic Surgical Oncology</em></p>
+            <p><strong>Specialist in Lung & Thoracic Cancers</strong></p>
+            <p>
+                Focus Areas: VATS and robotic lobectomy, early-stage lung cancer screening follow-up,
+                mesothelioma and thymoma surgery, airway reconstruction.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="booking.html">Booking An Appointment</a></li>
+                <li><a href="info.html">Health Awareness Information</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p>
+                Phoenix Cancer Care Center,<br>
+                No 12,<br>
+                Crossroad Avenue,<br>
+                Colombo 8.
+            </p>
+            <p>(555) 123-4569</p>
+            <p>info@phoenixcancercare.org</p>
+            <p>Mon-Fri: 7:00 AM – 10:00 PM</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul class="social-links">
+                <li><a href="#"><img src="facebook.png" alt="Facebook" class="social-icon"> Facebook</a></li>
+                <li><a href="#"><img src="instagram.png" alt="Instagram" class="social-icon"> Instagram</a></li>
+                <li><a href="#"><img src="twitter.png" alt="Twitter" class="social-icon"> Twitter</a></li>
+                <li><a href="#"><img src="linkedin.png" alt="LinkedIn" class="social-icon"> LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-emergency">
+        <p><strong>EMERGENCY:</strong> (555) 123-4569 | 911</p>
+        <p><strong>National Cancer Helpline:</strong> 1-800-4-CANCER</p>
+    </div>
+
+    <div class="footer-bottom">
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms</a> | <a href="#">Disclaimer</a> | <a href="#">Accessibility</a></p>
+        <p>© 2026 Phoenix Cancer Care.</p>
+    </div>
+</footer>
+

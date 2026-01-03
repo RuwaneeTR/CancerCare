@@ -1,0 +1,81 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Info";
+}
+<header>
+    <h1>Phoenix Cancer Care</h1>
+</header>
+
+<main>
+    <section class="form-container">
+        <h2>Login</h2>
+        <form onsubmit="redirectHome(); return false;">
+            <label for="email">Email or Username</label><br>
+            <input type="text" id="email" name="email" required><br><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <script>
+            function redirectHome() {
+
+              window.location.href = "home.html";
+            }
+        </script>
+
+
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="booking.html">Booking An Appointment</a></li>
+                <li><a href="info.html">Health Awareness Information</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p>
+                Phoenix Cancer Care Center,<br>
+                No 12,<br>
+                Crossroad Avenue,<br>
+                Colombo 8.
+            </p>
+            <p>(555) 123-4569</p>
+            <p>info@phoenixcancercare.org</p>
+            <p>Mon-Fri: 7:00 AM – 10:00 PM</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul class="social-links">
+                <li><a href="#"><img src="facebook.png" alt="Facebook" class="social-icon"> Facebook</a></li>
+                <li><a href="#"><img src="instagram.png" alt="Instagram" class="social-icon"> Instagram</a></li>
+                <li><a href="#"><img src="twitter.png" alt="Twitter" class="social-icon"> Twitter</a></li>
+                <li><a href="#"><img src="linkedin.png" alt="LinkedIn" class="social-icon"> LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-emergency">
+        <p><strong>EMERGENCY:</strong> (555) 123-4569 | 911</p>
+        <p><strong>National Cancer Helpline:</strong> 1-800-4-CANCER</p>
+    </div>
+
+    <div class="footer-bottom">
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms</a> | <a href="#">Disclaimer</a> | <a href="#">Accessibility</a></p>
+        <p>© 2026 Phoenix Cancer Care.</p>
+    </div>
+</footer>
