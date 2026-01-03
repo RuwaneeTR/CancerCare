@@ -56,6 +56,11 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+<div class="back-navigation">
+    <a asp-action="Index" asp-controller="Appointment">← Back to Appointment Home</a>
+    |
+    <a asp-action="Index" asp-controller="Appointments">View All Appointments</a>
+</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

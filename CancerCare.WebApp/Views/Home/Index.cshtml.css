@@ -1,0 +1,242 @@
+﻿/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #2e7d32;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header .logo {
+        height: 80px;
+        width: auto;
+        margin-right: 15px;
+    }
+
+nav {
+    margin-top: 10px;
+}
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+        padding: 5px;
+        transition: background 0.3s ease, padding 0.3s ease;
+    }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.2);
+            border-radius: 4px;
+            padding: 8px;
+        }
+
+/* Banner Section */
+.banner {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f1f8e9;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+    .banner h2 {
+        color: #06a106;
+        margin-bottom: 10px;
+    }
+
+    .banner p {
+        margin-bottom: 15px;
+    }
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Services Section */
+.services {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #e3f2fd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+    .services h2 {
+        color: #1565c0;
+        margin-bottom: 15px;
+    }
+
+    .services ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .services ul li {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+/* Footer */
+footer {
+    background: #2e7d32;
+    color: #fff;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+    .footer-section h3 {
+        margin-bottom: 10px;
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+
+    .footer-section a {
+        color: #fff;
+        text-decoration: none;
+        transition: background 0.3s ease, padding 0.3s ease;
+    }
+
+        .footer-section a:hover {
+            background: rgba(255,255,255,0.2);
+            border-radius: 4px;
+            padding: 5px;
+        }
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+    .social-links li {
+        margin: 5px 0;
+    }
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.footer-emergency {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+    .footer-bottom a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 5px;
+    }
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        header .logo {
+            height: 60px;
+        }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .banner-img {
+        max-height: 250px;
+    }
+
+    .services {
+        margin: 20px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .banner-img {
+        max-height: 200px;
+    }
+
+    .services {
+        padding: 10px;
+    }
+
+    .social-icon {
+        width: 16px;
+        height: 16px;
+    }
+}

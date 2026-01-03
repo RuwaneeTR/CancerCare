@@ -6,13 +6,25 @@
 }
 <main>
     <section class="form-container">
+       
+   
+    
+    <section class="form-container">
         <h2>Book an Appointment</h2>
-        <form action="/book" method="post">
+        
+        <form asp-action="Create" asp-controller="Appointments" method="post">
             <label for="fullname">Full Name</label><br>
             <input type="text" id="fullname" name="fullname" required><br><br>
 
             <label for="email">Email Address</label><br>
             <input type="email" id="email" name="email" required><br><br>
+
+        
+        
+    
+    
+    
+        
 
             <label for="contactno">Contact Number</label><br>
             <input type="tel" id="contactno" name="contactno" required><br><br>
@@ -98,7 +110,7 @@
         </div>
     </section>
 
-</main>
+</>
 
 
 <footer>
@@ -106,8 +118,8 @@
         <div class="footer-section">
             <h3>Quick Links</h3>
             <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="booking.html">Booking An Appointment</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a asp-action="Index" asp-controller="Appointments">Manage Appointments</a></li>
                 <li><a href="info.html">Health Awareness Information</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
             </ul>

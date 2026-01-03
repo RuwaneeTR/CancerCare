@@ -1,0 +1,307 @@
+﻿body {
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #2e7d32;
+    color: #fff;
+    padding: 25px; /* taller header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header .logo {
+        height: 100px;
+        width: auto;
+        margin-right: 15px;
+        transition: padding 0.3s ease;
+    }
+
+        header .logo:hover {
+            padding: 5px; /* logo gets extra padding */
+        }
+
+nav {
+    margin-top: 10px;
+}
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+        padding: 5px;
+        transition: padding 0.3s ease, background 0.3s ease;
+    }
+
+        nav a:hover {
+            padding: 10px; /* expands padding */
+            background: rgba(255,255,255,0.2);
+            border-radius: 4px;
+        }
+
+/* Banner */
+.banner {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    transition: padding 0.3s ease;
+}
+
+    .banner-text:hover {
+        padding: 25px; /* expands padding */
+    }
+
+/* Sections */
+section {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f1f8e9;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: padding 0.3s ease;
+}
+
+    section:hover {
+        padding: 30px; /* expands padding */
+    }
+
+    section h2 {
+        color: #06a106;
+        margin-bottom: 15px;
+    }
+
+    section h3 {
+        color: #1565c0;
+        margin-top: 15px;
+    }
+
+/* Cards */
+.cancer-card, .doctor-card {
+    background: #e3f2fd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    transition: padding 0.3s ease;
+}
+
+    .cancer-card:hover, .doctor-card:hover {
+        padding: 25px; /* expands padding */
+    }
+
+/* Images in sections */
+.section-img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+button {
+    background: #2e7d32;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: padding 0.3s ease, background 0.3s ease;
+}
+
+    button:hover {
+        background: #1b5e20;
+        padding: 14px 24px; /* expands padding */
+    }
+
+/* Social Icons */
+.social-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition: padding 0.3s ease;
+}
+
+    .social-icon:hover {
+        padding: 4px; /* icons get extra padding */
+    }
+
+/* Footer */
+footer {
+    background: #2e7d32;
+    color: #fff;
+    padding: 30px;
+    margin-top: 40px;
+    transition: padding 0.3s ease;
+}
+
+    footer:hover {
+        padding: 40px; /* expands padding */
+    }
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+    .footer-section h3 {
+        margin-bottom: 10px;
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+
+    .footer-section a {
+        color: #fff;
+        text-decoration: none;
+        padding: 3px;
+        transition: padding 0.3s ease, background 0.3s ease;
+    }
+
+        .footer-section a:hover {
+            padding: 8px; /* expands padding */
+            background: rgba(255,255,255,0.2);
+            border-radius: 4px;
+        }
+
+.footer-emergency {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        header .logo {
+            height: 70px;
+        }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .banner-text {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    section {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .section-img {
+        max-height: 200px;
+    }
+
+    .banner-img {
+        max-height: 250px;
+    }
+
+    .social-icon {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header .logo {
+        height: 60px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .banner-text {
+        font-size: 0.8rem;
+    }
+
+    .section-img {
+        max-height: 150px;
+    }
+
+    .banner-img {
+        max-height: 200px;
+    }
+
+    .social-icon {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+
+
+}
